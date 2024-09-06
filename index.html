@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김다연 포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+</head>
+
+<body>
+    <div class="wrap" id="fullpage">
+        <section class="section"><img src="img1/DY.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/DY2.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/DY3.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/DY4.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img1/DY5.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/DY6.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/DY7.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/DY8.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/DY9.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img2/DY10.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/DY11.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/DY12.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/DY13.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/DY14.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img3/DY15.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/DY16.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/DY17.jpg" alt="포트폴리오"></section>
+        <section class="section"><img src="img4/DY19.jpg" alt="포트폴리오"></section>
+    </div>
+
+
+    <script>
+        new fullpage('#fullpage', {
+            navigation: true,
+            responsiveWidth: 700,
+            anchors: ['home', 'about-us', 'contact'],
+            parallax: true,
+            onLeave: function (origin, destination, direction) {
+                console.log("Leaving section" + origin.index);
+            },
+        });
+    </script>
+</body>
+
+</html>
